@@ -1,6 +1,6 @@
 # ESP8266 Deauth All
 
-This is a fork from: I removed the OLED and tightened up the code. just program and power up :)
+This is a fork from https://github.com/justcallmekoko I removed the OLED and tightened up the code. just program and power up :)
 
 ## Table of Condiments
   - [Background](#background)
