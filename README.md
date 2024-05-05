@@ -1,5 +1,6 @@
 # ESP8266 Deauth All
 
+This is a fork from: I removed the OLED and tightened up the code. just program and power up :)
 
 ## Table of Condiments
   - [Background](#background)
@@ -7,10 +8,8 @@
   - [Setup](#setup)
     - [Hardware](#hardware)
     - [Uploading Code Using Arduino IDE](#uploading-code-using-arduino-ide)
-    - [Flashing the Firmware](#flashing-the-firmware)
   - [Usage](#usage)
   - [Issues](#issues)
-  - [Trash Code](#trash-code)
   
 ## Background
 A WiFi [deauthentication attack](https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack) is a form of denial of service where an attacker crafts 802.11 frames designed to sever the connection between a WiFi client and a wireless access point.  
@@ -31,11 +30,8 @@ My main objective for this project was to create a device that would be small en
     <p align="center"><img alt="Deauth" src="https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/images/de.jpg" width="600"></p>  
   4. Repeat
 
-## Setup
-
 ### Hardware
   * [WEMOS D1 Mini](https://www.amazon.com/Makerfocus-NodeMcu-Development-ESP8266-Compatible/dp/B01N3P763C/ref=sr_1_3?ie=UTF8&qid=1531324588&sr=8-3&keywords=wemos+d1+mini)
-  * [OLED Shield](https://www.amazon.com/dp/B076ZH4C8T/?coliid=I39R9FBCDGMH9J&colid=JRA2DAWA4MVZ&psc=0&ref_=lv_ov_lig_dp_it)
   
 ### Uploading Code Using Arduino IDE
 1. Install and open the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
@@ -45,22 +41,12 @@ My main objective for this project was to create a device that would be small en
 3. Install ESP8266 boards (Tools, Boards Manager):  
    * `arduino-esp8266-deauther`
    * `esp8266`
-4. Install the [Adafruit SSD1306 Wemos Mini OLED](https://github.com/stblassitude/Adafruit_SSD1306_Wemos_OLED) library
 5. Copy and paste the [code](https://raw.githubusercontent.com/the-red-team/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
 6. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
 7. Upload
-
-### Flashing The Firmware
-  1. Download the [.bin file](https://github.com/the-red-team/ESP8266_Deauth_All/blob/master/deauthall.ino.d1_mini.bin)
-  2. Download the [NodeMCU Flasher](https://github.com/nodemcu/nodemcu-flasher)
   
 ## Usage
-Just plug the device into any USB power source whether it's a computer, wall socket, or portable power supply, and let the device do the rest of the work. Refer to the run cycle of the attack [here](#how-it-works) which will run automatically
+Just plug the device into any USB power source whether it's a computer, wall socket, or portable power supply, and let the device do the rest of the work. 
 
 ## Issues
 Some devices are able to ignore deauth frames sent to broadcast so this may not work against all devices in your area
-
-## Trash Code
-So this code is complete garbage, but it works.  
-There are a lot of repeats which could have just been used in a function (Searching for known MACs)  
-but I said, "Fuck it" and just made this.
