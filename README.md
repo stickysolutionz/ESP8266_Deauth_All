@@ -41,7 +41,7 @@ My main objective for this project was to create a device that would be small en
 3. Install ESP8266 boards (Tools, Boards Manager):  
    * `arduino-esp8266-deauther`
    * `esp8266`
-5. Copy and paste the [code](https://raw.githubusercontent.com/the-red-team/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
+5. Copy and paste the [code](https://raw.githubusercontent.com/stickysolutionz/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
 6. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
 7. Upload
   
