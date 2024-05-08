@@ -1,6 +1,6 @@
 # ESP8266 Deauth All
 
-This is a fork from https://github.com/justcallmekoko I removed the OLED screen reqs and tightened up the code. just program and power up :) If the AP is vulnerable youll see discons within a minute of boot.
+This is a fork from https://github.com/justcallmekoko I removed the OLED screen reqs and tightened up the code. Also, added a ino that has the ability to whitelist APs. This field os online 45 'const char *IGNORE_LIST[] = {"AP1", "AP2", "AP3"};' theres no limit 1-infinity. just program and power up :) If the AP is vulnerable youll see discons within a minute of boot. 
 
 ## Table of Condiments
   - [Background](#background)
