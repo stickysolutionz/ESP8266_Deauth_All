@@ -42,6 +42,7 @@ My main objective for this project was to create a device that would be small en
    * `arduino-esp8266-deauther`
    * `esp8266`
 5. Copy and paste one of the 2 options below. Option a. will deauth. Option b. has an editable ignore list on line 45 everything.
+   * `arduino-esp8266-deauther`
    [a.](https://raw.githubusercontent.com/stickysolutionz/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
    [b.](https://raw.githubusercontent.com/stickysolutionz/ESP8266_Deauth_All/master/deauth_all.ino) into your Arduino IDE
 7. Select the WeMos D1 Mini Board (Tools, Board, <b>ESP8266 Deauther Modules</b>)
